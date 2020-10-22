@@ -1,4 +1,5 @@
-<li class="list-group-item">
+<li [ngStyle]="{color: getColor()}" class="list-group-item">
+	<div style="width:20px; height:20px; background-color:red;" *ngIf="blogStatus === 'negative'"></div>
 	<h4> My blog: {{ blogTitle }}</h4>
-  <h5>Content: {{ blogContent }} </h5>
+	<h5>Content: {{ blogContent }} </h5>
 </li>
