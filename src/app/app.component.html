@@ -1,74 +1,53 @@
 <hello title="{{ title }}"></hello>
 <p>
-  Let's beggin!
+	Let's beggin!
 </p>
 
 <div class="container">
-  <h2>Take a look</h2>
-  <div class="row">
-    <div class="col-4 col-sm-2">
-      <ul class="list-group">
-        <p>Last Update: {{ lastUpdate | async | date: 'short' }}</p>
-        <app-blog
-          [blogTitle]="blogOne"
-          [blogContent]="blogContentOne"
-          [blogLoveIts]="blogLoveItsOne"
-        ></app-blog>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec magna
-          nunc. Donec ultricies blandit risus, rhoncus pretium diam. Donec
-          suscipit vitae tellus eu egestas. Cras id libero ultricies, pharetra
-          nunc eget, sollicitudin nisi. In hac habitasse platea dictumst. Donec
-          sed convallis mauris, sed finibus orci. Curabitur orci diam,
-          condimentum et lorem sed, imperdiet mollis leo. Sed consequat nulla
-          vitae massa scelerisque congue. Mauris sem lacus, dapibus id tempor
-          non, mollis ut enim. Praesent et sem fringilla, viverra felis sed,
-          vehicula ligula. Aenean in lacus ut ipsum vulputate porta.
-        </p>
-      </ul>
-    </div>
-    <div class="col-4 col-sm-2">
-      <ul class="list-group">
-        <p>Last Update: {{ lastUpdate | async | date: 'short' }}</p>
-        <app-blog
-          [blogTitle]="blogtwo"
-          [blogContent]="blogContentTwo"
-          [blogLoveIts]="blogLoveItsTwo"
-        >
-        </app-blog>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec magna
-          nunc. Donec ultricies blandit risus, rhoncus pretium diam. Donec
-          suscipit vitae tellus eu egestas. Cras id libero ultricies, pharetra
-          nunc eget, sollicitudin nisi. In hac habitasse platea dictumst. Donec
-          sed convallis mauris, sed finibus orci. Curabitur orci diam,
-          condimentum et lorem sed, imperdiet mollis leo. Sed consequat nulla
-          vitae massa scelerisque congue. Mauris sem lacus, dapibus id tempor
-          non, mollis ut enim. Praesent et sem fringilla, viverra felis sed,
-          vehicula ligula. Aenean in lacus ut ipsum vulputate porta.
-        </p>
-      </ul>
-    </div>
-    <div class="col-4">
-      <ul class="list-group">
-        <p>Last Update: {{ lastUpdate | async | date: 'short' }}</p>
-        <app-blog
-          [blogTitle]="blogThree"
-          [blogContent]="blogContentThree"
-          [blogLoveIts]="blogLoveItsThree"
-        ></app-blog>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec magna
-          nunc. Donec ultricies blandit risus, rhoncus pretium diam. Donec
-          suscipit vitae tellus eu egestas. Cras id libero ultricies, pharetra
-          nunc eget, sollicitudin nisi. In hac habitasse platea dictumst. Donec
-          sed convallis mauris, sed finibus orci. Curabitur orci diam,
-          condimentum et lorem sed, imperdiet mollis leo. Sed consequat nulla
-          vitae massa scelerisque congue. Mauris sem lacus, dapibus id tempor
-          non, mollis ut enim. Praesent et sem fringilla, viverra felis sed,
-          vehicula ligula. Aenean in lacus ut ipsum vulputate porta.
-        </p>
-      </ul>
-    </div>
-  </div>
+	<h2>Take a look</h2>
+	<div class="row">
+		<div class="col-md-4 col-lg-4">
+			<ul class="list-group">
+				<p>Last Update: {{ lastUpdate | async | date: 'short' }}</p>
+				<app-blog [blogTitle]="blogOne" [blogContent]="blogContentOne"></app-blog>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec magna
+					nunc. Donec ultricies blandit risus, rhoncus pretium diam. Donec
+					suscipit vitae tellus eu egestas. Cras id libero ultricies, pharetra
+					nunc eget, sollicitudin nisi. In hac habitasse platea dictumst. Donec
+					sed convallis mauris, sed finibus orci. Curabitur orci diam.
+				</p>
+			</ul>
+			<like-box></like-box>
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<ul class="list-group">
+				<p>Last Update: {{ lastUpdate | async | date: 'short' }}</p>
+				<app-blog [blogTitle]="blogtwo" [blogContent]="blogContentTwo">
+				</app-blog>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec magna
+					nunc. Donec ultricies blandit risus, rhoncus pretium diam. Donec
+					suscipit vitae tellus eu egestas. Cras id libero ultricies, pharetra
+					nunc eget, sollicitudin nisi. In hac habitasse platea dictumst. Donec
+					sed convallis mauris, sed finibus orci. Curabitur orci diam.
+				</p>
+			</ul>
+			<like-box></like-box>
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<ul class="list-group">
+				<p>Last Update: {{ lastUpdate | async | date: 'short' }}</p>
+				<app-blog [blogTitle]="blogThree" [blogContent]="blogContentThree"></app-blog>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec magna
+					nunc. Donec ultricies blandit risus, rhoncus pretium diam. Donec
+					suscipit vitae tellus eu egestas. Cras id libero ultricies, pharetra
+					nunc eget, sollicitudin nisi. In hac habitasse platea dictumst. Donec
+					sed convallis mauris, sed finibus orci. Curabitur orci diam.
+				</p>
+			</ul>
+			<like-box></like-box>
+		</div>
+	</div>
 </div>
