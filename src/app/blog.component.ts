@@ -17,14 +17,7 @@ export class BlogComponent implements OnInit {
   @Input() blogLoveIts: number;
   @Input() blogCreated_at: Date;
 
-
   constructor() {}
 
   ngOnInit() {}
-
-  getContent() {
-    return this.blogContent;
-  }
-
-
 }
